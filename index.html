@@ -3,8 +3,9 @@
 <head>
 	<title>Andrew Motoshin — Front-end web developer</title>
 	<meta charset="utf-8" />
-	<meta name="robots" content="all" />
-	<link rel="canonical" href="http://htmlhero.net" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/styles.css" />
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -16,69 +17,37 @@
 	</script>
 </head>
 <body>
+	<div class="page">
+		<div class="text center">
 
-	<h1>Andrew Motoshin</h1>
-	<h2>Front-end web developer</h2>
+			<h1>Andrew Motoshin</h1>
+			<h2>Front-end web developer</h2>
 
-	<p>Contacts:</p>
-	<ul>
-		<li>Email: <span id="secret"></span></li>
-		<li>Skype: daredevil_away</li>
-	</ul>
-	<p>Links:</p>
-	<ul>
-		<li>Blog: <a href="http://htmlhero.ru">htmlhero.ru</a></li>
-		<li>GitHub: <a href="https://github.com/htmlhero">github.com/htmlhero</a></li>
-		<li>LinkedIn: <a href="https://linkedin.com/pub/andrew-motoshin/24/87b/845">linkedin.com/pub/andrew-motoshin/24/87b/845</a></li>
-	</ul>
+			<p>Contacts:</p>
+			<ul>
+				<li>Email: <span id="secret"></span></li>
+				<li>Skype: daredevil_away</li>
+			</ul>
 
-	<script>
-		(function(){
+			<p>Links:</p>
+			<ul>
+				<li>Blog: <a href="http://htmlhero.ru">htmlhero.ru</a></li>
+				<li>GitHub: <a href="https://github.com/htmlhero">github.com/htmlhero</a></li>
+				<li>LinkedIn: <a href="https://linkedin.com/pub/andrew-motoshin/24/87b/845">linkedin.com/pub/andrew-motoshin/24/87b/845</a></li>
+			</ul>
 
-			function decode (input) {
+			<p>Skills:</p>
+			<ul>
+				<li>JavaScript, Node.js</li>
+				<li>JQuery, AngularJS, Backbone.js</li>
+				<li>HTML5, CSS3, BEM</li>
+				<li>Canvas, SVG</li>
+				<li>Git, Mercurial, SVN</li>
+			</ul>
 
-				var keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-				var output = "";
-				var chr1, chr2, chr3;
-				var enc1, enc2, enc3, enc4;
-				var i = 0;
+		</div>
+	</div>
 
-				input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
-
-				while (i < input.length) {
-
-					enc1 = keys.indexOf(input.charAt(i++));
-					enc2 = keys.indexOf(input.charAt(i++));
-					enc3 = keys.indexOf(input.charAt(i++));
-					enc4 = keys.indexOf(input.charAt(i++));
-
-					chr1 = (enc1 << 2) | (enc2 >> 4);
-					chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
-					chr3 = ((enc3 & 3) << 6) | enc4;
-
-					output = output + String.fromCharCode(chr1);
-
-					if (enc3 != 64) {
-						output = output + String.fromCharCode(chr2);
-					}
-					if (enc4 != 64) {
-						output = output + String.fromCharCode(chr3);
-					}
-
-				}
-
-				return output;
-
-			}
-
-			var el = document.getElementById('secret');
-
-			if (el) {
-				el.innerHTML = decode('PGEgaHJlZj0ibWFpbHRvOmFuZHJld0BodG1saGVyby5ydSI+YW5kcmV3QGh0bWxoZXJvLnJ1PC9hPg==');
-			}
-
-		})();
-	</script>
-
+	<script src="js/scripts.js"></script>
 </body>
 </html>
