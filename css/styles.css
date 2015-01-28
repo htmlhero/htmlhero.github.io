@@ -19,7 +19,7 @@ body, input, textarea, select, button {
 
 .page {
 	width: 100%;
-	min-width: 400px;
+	min-width: 350px;
 	height: 100%;
 	display: table;
 }
@@ -30,7 +30,7 @@ body, input, textarea, select, button {
 }
 
 .text {
-	max-width: 450px;
+	max-width: 300px;
 	padding: 25px;
 	margin: auto;
 }
