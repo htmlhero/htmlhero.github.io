@@ -20,16 +20,20 @@ body, input, textarea, select, button {
 .page {
 	width: 100%;
 	min-width: 400px;
+	height: 100%;
+	display: table;
 }
 
 .center {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.text {
 	max-width: 450px;
 	padding: 25px;
 	margin: auto;
 }
-
-
-.text {}
 	.text p {
 		margin-top: 10px
 	}
