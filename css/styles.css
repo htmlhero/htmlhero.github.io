@@ -19,7 +19,7 @@ body, input, textarea, select, button {
 
 .page {
 	width: 100%;
-	min-width: 400px;
+	min-width: 320px;
 	height: 100%;
 	display: table;
 }
@@ -30,7 +30,8 @@ body, input, textarea, select, button {
 }
 
 .text {
-	max-width: 350px;
+	width: 320px;
+	box-sizing: border-box;
 	padding: 25px;
 	margin: auto;
 }
@@ -40,15 +41,16 @@ body, input, textarea, select, button {
 	.text p:first-child {
 		margin-top: 0
 	}
-	.text h1 {
-		font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-		font-size: 27px;
-		font-weight: bold;
-	}
+	.text h1,
 	.text h2 {
 		font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-		font-size: 18px;
 		font-weight: bold;
+	}
+	.text h1 {
+		font-size: 27px;
+	}
+	.text h2 {
+		font-size: 18px;
 	}
 	.text ul {
 		margin-left: 20px
