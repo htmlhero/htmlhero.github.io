@@ -41,3 +41,22 @@
 		el.innerHTML = decode('PGEgaHJlZj0ibWFpbHRvOmFuZHJld0BodG1saGVyby5ydSI+YW5kcmV3QGh0bWxoZXJvLnJ1PC9hPg==');
 	}
 })();
+
+window.addEventListener('load', function() {
+	(function(m, e, t, r, i, k, a) {
+		m[i] = m[i] || function() {
+			(m[i].a = m[i].a || []).push(arguments)
+		};
+		m[i].l = 1 * new Date();
+		k = e.createElement(t);
+		a = e.getElementsByTagName(t)[0];
+		k.src = r;
+		a.parentNode.insertBefore(k, a);
+	})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+	ym(41672319, 'init', {
+		clickmap: true,
+		trackLinks: true,
+		accurateTrackBounce: true
+	});
+}, false);
