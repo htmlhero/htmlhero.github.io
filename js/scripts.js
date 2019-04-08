@@ -1,14 +1,13 @@
-(function(){
-
+(function() {
 	function decode (input) {
 
-		var keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
-		var output = "";
+		var keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+		var output = '';
 		var chr1, chr2, chr3;
 		var enc1, enc2, enc3, enc4;
 		var i = 0;
 
-		input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+		input = input.replace(/[^A-Za-z0-9\+\/\=]/g, '');
 
 		while (i < input.length) {
 
@@ -23,10 +22,10 @@
 
 			output = output + String.fromCharCode(chr1);
 
-			if (enc3 != 64) {
+			if (enc3 !== 64) {
 				output = output + String.fromCharCode(chr2);
 			}
-			if (enc4 != 64) {
+			if (enc4 !== 64) {
 				output = output + String.fromCharCode(chr3);
 			}
 
@@ -41,5 +40,4 @@
 	if (el) {
 		el.innerHTML = decode('PGEgaHJlZj0ibWFpbHRvOmFuZHJld0BodG1saGVyby5ydSI+YW5kcmV3QGh0bWxoZXJvLnJ1PC9hPg==');
 	}
-
 })();
